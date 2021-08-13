@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class DeathHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] Canvas gameOverCanvas;
+
     void Start()
     {
-        
+        gameOverCanvas.enabled = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void HandleDeath()
     {
-        
+        gameOverCanvas.enabled = true;
+        Time.timeScale = 0; // pause the game
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 }

@@ -173,9 +173,12 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		//Save the weapon name
 		storedWeaponName = weaponName;
 		//Get weapon name from string to text
-		currentWeaponText.text = weaponName;
+		
+		// currentWeaponText.text = weaponName;
+		
 		//Set total ammo text from total ammo int
-		totalAmmoText.text = ammo.ToString();
+		
+		// totalAmmoText.text = ammo.ToString();
 
 		//Weapon sway
 		initialSwayPosition = transform.localPosition;
@@ -282,7 +285,8 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		*/
 
 		//Set current ammo text from ammo int
-		currentAmmoText.text = currentAmmo.ToString ();
+
+		// currentAmmoText.text = currentAmmo.ToString ();
 
 		//Continosuly check which animation 
 		//is currently playing
@@ -311,7 +315,9 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		if (currentAmmo == 0) 
 		{
 			//Show out of ammo text
-			currentWeaponText.text = "OUT OF AMMO";
+
+			// currentWeaponText.text = "OUT OF AMMO";
+			
 			//Toggle bool
 			outOfAmmo = true;
 			//Auto reload if true
@@ -323,7 +329,9 @@ public class AutomaticGunScriptLPFP : MonoBehaviour {
 		else 
 		{
 			//When ammo is full, show weapon name again
-			currentWeaponText.text = storedWeaponName.ToString ();
+			
+			// currentWeaponText.text = storedWeaponName.ToString ();
+			
 			//Toggle bool
 			outOfAmmo = false;
 			//anim.SetBool ("Out Of Ammo", false);
