@@ -18,4 +18,9 @@ public class EnemyAttack : MonoBehaviour
         if(target == null) { return; }
         target.TakeDamage(damage);
     }
+
+    public void OnDamageTaken()
+    {
+        Debug.Log(name + " i too know that we took damage");
+    }
 }
