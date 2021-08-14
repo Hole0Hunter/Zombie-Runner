@@ -10,6 +10,7 @@ public class Weapon : MonoBehaviour
     [SerializeField] float damage = 40f;
     [SerializeField] GameObject hitEffect;
 
+    [SerializeField] Ammo ammoSlot;
 
     // Start is called before the first frame update
     void Start()
@@ -28,8 +29,12 @@ public class Weapon : MonoBehaviour
 
     void Shoot()
     {
-
-        ProcessRaycast();
+        if(ammoSlot.AmmoAmount > 0)
+        {
+            ammoSlot.ReduceCurrentAmmo();
+            ProcessRaycast();
+        }
+        
     }
 
     void ProcessRaycast()

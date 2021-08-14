@@ -458,37 +458,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &552649386 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8108412551893258293, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-  m_PrefabInstance: {fileID: 2099274104}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &552649391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552649386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60dd5cae97fc0144eaf60da39db40258, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 254585977}
---- !u!114 &552649392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552649386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e9e950689da6ec4fb87591195efce28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 150
 --- !u!4 &553975004 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8110752432958278765, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
@@ -1519,27 +1488,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8107352041372855471, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8107396403933426015, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8107441705512151619, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8107745261649098861, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8107805084431961447, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8108398745281968921, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
+    - target: {fileID: 552649391, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
+      propertyPath: gameOverCanvas
+      value: 
+      objectReference: {fileID: 254585977}
+    - target: {fileID: 3360669973173859176, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -1589,18 +1542,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8110752432958278765, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8148499528413445733, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: totalAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8148499528413445733, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: currentAmmoText
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8330511036225353531, guid: ff17e47dbc8d17d4b92461a39c45b013, type: 3}
-      propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
